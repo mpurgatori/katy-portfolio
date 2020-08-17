@@ -13,6 +13,9 @@ import KeyboardArrowUpIcon from "@material-ui/icons/KeyboardArrowUp";
 import Zoom from "@material-ui/core/Zoom";
 import Grid from "@material-ui/core/Grid";
 import LinkedInIcon from "@material-ui/icons/LinkedIn";
+import Athena from "./components/Athena";
+import Fixit from "./components/Fixit";
+import About from "./components/About";
 
 const useStyles = makeStyles((theme) => ({
   root: {
@@ -35,7 +38,7 @@ const useStyles = makeStyles((theme) => ({
     fontSize: "1.6em",
     padding: 10,
     fontFamily: "'Nunito Sans', sans-serif",
-    fontWeight: 600,
+    fontWeight: 400,
   },
   toolBar: {
     padding: "40px 30px 20px",
@@ -124,18 +127,27 @@ export default function App(props) {
           </Toolbar>
         </AppBar>
         <Toolbar style={{ minHeight: 1 }} id="back-to-top-anchor" />
-        <Container>
+        <Grid>
           {props.children}
 
           <Switch>
             <Route path="/about">
               <About />
             </Route>
+            <Route path="/athena">
+              <Athena />
+            </Route>
+            <Route path="/other1">
+              <Fixit />
+            </Route>
+            <Route path="/other2">
+              <About />
+            </Route>
             <Route path="/">
               <Main />
             </Route>
           </Switch>
-        </Container>
+        </Grid>
       </Router>
       <ScrollTop {...props}>
         <Fab color="secondary" size="small" aria-label="scroll back to top">
@@ -144,8 +156,4 @@ export default function App(props) {
       </ScrollTop>
     </React.Fragment>
   );
-}
-
-function About() {
-  return <h2>About</h2>;
 }
