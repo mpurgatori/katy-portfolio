@@ -8,7 +8,7 @@ import KatyRotated from "../assets/Katy_profile_ROTATED.png";
 
 const useStyles = makeStyles((theme) => ({
   text: {
-    color: "#000",
+    color: "#333333",
     fontFamily: "'Nunito Sans', sans-serif",
     fontSize: "2.3em",
   },
@@ -54,12 +54,14 @@ const useStyles = makeStyles((theme) => ({
   },
 }));
 
-export default function Athena() {
+const About = ({ checkPage }) => {
   const classes = useStyles();
 
   const windowWidth = useWindowWidth();
 
   const windowXS = windowWidth < 600;
+
+  checkPage(true);
 
   return (
     <React.Fragment>
@@ -106,4 +108,6 @@ export default function Athena() {
       </Grid>
     </React.Fragment>
   );
-}
+};
+
+export default About;
