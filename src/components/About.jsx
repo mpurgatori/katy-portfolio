@@ -66,8 +66,6 @@ export default function Athena() {
 
   const windowXS = windowWidth < 600;
 
-  console.log({ windowWidth });
-
   return (
     <React.Fragment>
       <Grid container>
