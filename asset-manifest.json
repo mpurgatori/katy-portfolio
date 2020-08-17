@@ -1,0 +1,31 @@
+{
+  "files": {
+    "main.js": "/katy-portfolio/static/js/main.f9533e32.chunk.js",
+    "main.js.map": "/katy-portfolio/static/js/main.f9533e32.chunk.js.map",
+    "runtime-main.js": "/katy-portfolio/static/js/runtime-main.f4fae641.js",
+    "runtime-main.js.map": "/katy-portfolio/static/js/runtime-main.f4fae641.js.map",
+    "static/js/2.35d2f76c.chunk.js": "/katy-portfolio/static/js/2.35d2f76c.chunk.js",
+    "static/js/2.35d2f76c.chunk.js.map": "/katy-portfolio/static/js/2.35d2f76c.chunk.js.map",
+    "index.html": "/katy-portfolio/index.html",
+    "precache-manifest.10d59f3573260513bcc37b3c21eb60cb.js": "/katy-portfolio/precache-manifest.10d59f3573260513bcc37b3c21eb60cb.js",
+    "service-worker.js": "/katy-portfolio/service-worker.js",
+    "static/js/2.35d2f76c.chunk.js.LICENSE.txt": "/katy-portfolio/static/js/2.35d2f76c.chunk.js.LICENSE.txt",
+    "static/media/Athena_1.png": "/katy-portfolio/static/media/Athena_1.29534bb0.png",
+    "static/media/Athena_2.png": "/katy-portfolio/static/media/Athena_2.f3dec07d.png",
+    "static/media/Athena_3.png": "/katy-portfolio/static/media/Athena_3.81fe19ee.png",
+    "static/media/Athena_4.png": "/katy-portfolio/static/media/Athena_4.2ad53895.png",
+    "static/media/Athena_mockup_original.png": "/katy-portfolio/static/media/Athena_mockup_original.997163d0.png",
+    "static/media/Brainiac_mockup_original.png": "/katy-portfolio/static/media/Brainiac_mockup_original.4e4cee39.png",
+    "static/media/Fixit_mockup_original.png": "/katy-portfolio/static/media/Fixit_mockup_original.5370844f.png",
+    "static/media/Katy_profile_ROTATED.png": "/katy-portfolio/static/media/Katy_profile_ROTATED.8ca6f785.png",
+    "static/media/Katy_profile_clips.png": "/katy-portfolio/static/media/Katy_profile_clips.2d9ac058.png",
+    "static/media/Underline_blue.svg": "/katy-portfolio/static/media/Underline_blue.71fef336.svg",
+    "static/media/Underline_pink.svg": "/katy-portfolio/static/media/Underline_pink.23751cfb.svg",
+    "static/media/Underline_yellow.svg": "/katy-portfolio/static/media/Underline_yellow.c4ed6ca1.svg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.f4fae641.js",
+    "static/js/2.35d2f76c.chunk.js",
+    "static/js/main.f9533e32.chunk.js"
+  ]
+}
