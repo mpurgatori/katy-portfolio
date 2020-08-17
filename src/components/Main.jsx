@@ -45,6 +45,9 @@ const useStyles = makeStyles((theme) => ({
   links: {
     textDecoration: "none",
   },
+  textSemiBold: {
+    fontWeight: 600,
+  },
 }));
 
 const Panel = ({
@@ -92,7 +95,10 @@ const Main = ({ checkPage }) => {
             </Grid>
             <Grid className={`${classes.text} ${classes.katy}`}>I'm Katy</Grid>
             <Grid className={`${classes.text} ${classes.period}`}>.</Grid>
-            <Grid container className={`${classes.text} ${classes.hello}`}>
+            <Grid
+              container
+              className={`${classes.text} ${classes.textSemiBold} ${classes.hello}`}
+            >
               UX designer / psychologist / storyteller
             </Grid>
           </Grid>
