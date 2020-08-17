@@ -1,18 +1,10 @@
-import Container from "@material-ui/core/Container";
-import Grid from "@material-ui/core/Grid";
-import { makeStyles } from "@material-ui/core/styles";
+import { makeStyles, Grid, Typography, Button } from "@material-ui/core";
 import React from "react";
-import { Typography, Button } from "@material-ui/core";
-import flashlightGirl from "../assets/flashlightGirl.png";
-import WholePage from "../assets/whole_page.png";
-import FullText from "../assets/Fullscreen_smaller_text.png";
-import TestFinal from "../assets/TEST_FINAL.png";
-import Latest from "../assets/Latest.png";
-import test from "../assets/whitebacktest.jpeg";
-
-// import sketchLogo from "..assets/Logo"
-// import miroLogo
-// import invisionLogo
+import Athena1 from "../assets/Athena_1.png";
+import Athena2 from "../assets/Athena_2.png";
+import Athena3 from "../assets/Athena_3.png";
+import Athena4 from "../assets/Athena_4.png";
+import ScrollableAnchor, { goToAnchor } from "react-scrollable-anchor";
 
 const useStyles = makeStyles((theme) => ({
   text: {
@@ -29,44 +21,8 @@ const useStyles = makeStyles((theme) => ({
     minHeight: 500,
     position: "relative",
   },
-  paddingBottomText: {
-    paddingBottom: 15,
-  },
-  panelGrey: {
-    backgroundColor: "#F5F5F5",
-    padding: 30,
-    position: "relative",
-  },
-  quarterCircle: {
-    position: "absolute",
-    height: 75,
-    width: 75,
-    lineHeight: 75,
-    textAlign: "center",
-    background: "#f78888",
-    fontSize: "1.5rem",
-  },
-  quarterCircleBottomLeft: {
-    borderBottomLeftRadius: 100,
-    top: 0,
-    right: 0,
-  },
-  quarterCircleTopLeft: {
-    borderTopLeftRadius: 100,
-    bottom: 0,
-    right: 0,
-  },
   ulStyle: {
     listStyle: "none",
-  },
-  bullets: {
-    "li&::before": {
-      content: '"•"',
-      color: "#90ccf4",
-      display: "inline-block",
-      width: "1em",
-      marginLeft: "-1em",
-    },
   },
 }));
 
@@ -75,9 +31,90 @@ export default function Athena() {
   return (
     <React.Fragment>
       <main>
-        <div style={{ textAlign: "center" }}>
-          <img width="100%" src={test} />
-          <img width="100%" src={Latest} />
+        <div style={{ textAlign: "center", backgroundColor: "#ffffff" }}>
+          <img alt="" width="100%" src={Athena1} />
+
+          {/* Navigating the page */}
+          <Grid style={{ paddingRight: 10, paddingLeft: 10 }}>
+            <Grid className={classes.panel} container>
+              <Grid xs={12} justify="center" container>
+                <Grid xs={6}>
+                  <Typography
+                    variant="h3"
+                    style={{ paddingTop: 50, textAlign: "center" }}
+                    className={`${classes.text} ${classes.textExtraBold}`}
+                  >
+                    Finding your way around
+                  </Typography>
+                  <Typography
+                    style={{ padding: 50 }}
+                    className={`${classes.text} ${classes.textSemiBold}`}
+                    variant="h5"
+                  >
+                    This case study is divided into 3 sections. If you’re
+                    interested in a particular part of the process, feel free to
+                    jump right in!
+                  </Typography>
+                  <Grid justify="center" container>
+                    <Grid item>
+                      <Button
+                        style={{
+                          backgroundColor: "#f78888",
+                          margin: 20,
+                          padding: 10,
+                          width: "80%",
+                        }}
+                        variant="contained"
+                        color="primary"
+                        onClick={() => goToAnchor("research")}
+                      >
+                        Research
+                      </Button>
+                    </Grid>
+                    <Grid item>
+                      <Button
+                        style={{
+                          backgroundColor: "#f78888",
+                          margin: 20,
+                          padding: 10,
+                          width: "80%",
+                        }}
+                        variant="contained"
+                        color="primary"
+                        onClick={() => goToAnchor("discoveries")}
+                      >
+                        Discoveries
+                      </Button>
+                    </Grid>
+                    <Grid item>
+                      <Button
+                        style={{
+                          backgroundColor: "#f78888",
+                          margin: 20,
+                          padding: 10,
+                          width: "80%",
+                        }}
+                        variant="contained"
+                        color="primary"
+                        onClick={() => goToAnchor("solutions")}
+                      >
+                        Solutions
+                      </Button>
+                    </Grid>
+                  </Grid>
+                </Grid>
+              </Grid>
+            </Grid>
+          </Grid>
+          <ScrollableAnchor id={"research"}>
+            <img alt="" width="100%" src={Athena2} />
+          </ScrollableAnchor>
+          <ScrollableAnchor id={"discoveries"}>
+            <img alt="" width="100%" src={Athena3} />
+          </ScrollableAnchor>
+          <ScrollableAnchor id={"solutions"}>
+            <img alt="" width="100%" src={Athena4} />
+          </ScrollableAnchor>
         </div>
       </main>
     </React.Fragment>

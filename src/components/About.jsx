@@ -2,14 +2,9 @@ import Grid from "@material-ui/core/Grid";
 import { makeStyles } from "@material-ui/core/styles";
 import React from "react";
 import { Typography } from "@material-ui/core";
-import Katy from "../assets/katy_river.png";
 import KatyClips from "../assets/Katy_profile_clips.png";
 import { useWindowWidth } from "@react-hook/window-size";
-import KatyRotated from "../assets/Katy-rotated.png";
-
-// import sketchLogo from "..assets/Logo"
-// import miroLogo
-// import invisionLogo
+import KatyRotated from "../assets/Katy_profile_ROTATED.png";
 
 const useStyles = makeStyles((theme) => ({
   text: {
@@ -35,9 +30,9 @@ const useStyles = makeStyles((theme) => ({
     paddingBottom: 20,
   },
   textConatiner: {
-    padding: "5px 20px 20px 20px",
+    padding: "5px 20px 0 20px",
     [theme.breakpoints.up("sm")]: {
-      paddingTop: "25%",
+      paddingTop: "20%",
     },
   },
   imageContainer: {
@@ -72,12 +67,18 @@ export default function Athena() {
         <Grid className={classes.imageContainer} xs={12} sm={6} item>
           {windowXS ? (
             <img
+              alt="Katy On Clip"
               className={classes.katyRotated}
               width="80%"
               src={KatyRotated}
             />
           ) : (
-            <img className={classes.katyImage} width="80%" src={KatyClips} />
+            <img
+              alt="Katy On Clip Horizontal"
+              className={classes.katyImage}
+              width="80%"
+              src={KatyClips}
+            />
           )}
         </Grid>
         <Grid className={classes.textConatiner} xs={12} sm={5} item>
